@@ -7,6 +7,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
     * Download and install this, https://www.docker.com/docker-mac
     * Once you have the above installed, download and instlal the following, https://www.docker.com/products/docker-toolbox
 2. Once you have it installed, make sure to run **'Docker Quickstart Terminal'**
+3. Let's prepare some other things, before we install tensorflow image 
 3. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**.
 4. 
 4. In **'Docker Quickstart Terminal'**, type the following:
