@@ -11,7 +11,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
     * Create a 'tensorflow/tf_files' under your home directory; type the following
     * mkdir `~/tensorflow/tf_files`
     * This directory will hold all directories of images that we will be used for training
-    * The structur of the directory should be as follows:
+    * The structure of the directory should be as follows:
     <pre>
     ~/tensorflow/tf_files
       +-- darth_vader
@@ -21,9 +21,16 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
          +-- ...
          +-- dv{n}.jpg
       +-- darth_maul
+         +-- dm1.jpg
+         +-- dm2.jpg
+         +-- dm3.jpg
+         +-- ...
+         +-- dm{n}.jpg
       +-- kitten
+         +-- ...
      </pre>
-3. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**.
 4. 
-4. In **'Docker Quickstart Terminal'**, type the following:
+5. Now, let's download all required images to be saved in those directories above (darth_vader, darth_maul)
+6. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**. 
+7. In **'Docker Quickstart Terminal'**, type the following:
     * docker run -it -v /Users/lrpurba/latih/python/tensorflow/tf_files/:/star_wars/  gcr.io/tensorflow/tensorflow:latest-devel
