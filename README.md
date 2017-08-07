@@ -29,8 +29,10 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
       +-- kitten
          +-- ...
      </pre>
-4. 
+4. To make easier to download all required files, make sure to install this chrome extension, `Fatkun Batch Download Image`
 5. Now, let's download all required images to be saved in those directories above (darth_vader, darth_maul)
+You can use the following links to download darth vader and darth maul:
+    * [Darth Vader] (https://www.google.com/search?q=darth+vader&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi9g8GVqcbVAhUK8GMKHUc9DlwQ_AUICigB&biw=1276&bih=703
 6. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**. 
 7. In **'Docker Quickstart Terminal'**, type the following:
     * docker run -it -v /Users/lrpurba/latih/python/tensorflow/tf_files/:/star_wars/  gcr.io/tensorflow/tensorflow:latest-devel
