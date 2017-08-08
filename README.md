@@ -90,7 +90,28 @@ Converted 2 variables to const ops.
     * `cd ~/tensorflow/tf_files`
     * Create a new file. You can name it whatever you want. [Source code](./tf_classify.py)
 11. Before we can test our sample data/images, let's download any Darth Vader and Darth Maul images:
-    * Let's use this [Dart Vader image](https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.buildabear.com%2FProductImages%2FBABW_US%2FXL%2F22048x.jpg&imgrefurl=http%3A%2F%2Fwww.buildabear.com%2Fshopping%2Fstore%2FDarth-Vader-Costume%2FproductId%3Dprod11330002&docid=hdbesD4NwWilAM&tbnid=ei5gfLdwvu4SzM%3A&vet=10ahUKEwiUx4Oku8bVAhWFsVQKHShUBcI4yAEQMwgSKBAwEA..i&w=600&h=600&bih=703&biw=1276&q=darth%20vader&ved=0ahUKEwiUx4Oku8bVAhWFsVQKHShUBcI4yAEQMwgSKBAwEA&iact=mrc&uact=8), and save it under `~/tensorflow/tf_files`, named it dv1.jpg
-    * Let's use this [Dart Maul image](https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn.epicstream.com%2Fassets%2Fuploads%2Fvideoscover%2F760x400%2FScreen_Shot_2016-03-06_at_3.44_.02_PM_.png&imgrefurl=http%3A%2F%2Fepicstream.com%2Fvideos%2FDarth-Maul-Apprentice-is-One-of-The-Best-Star-Wars-Fan-Films-Ever-Made&docid=GYumqrXocKR7bM&tbnid=ug9_NysdvGNTRM%3A&vet=10ahUKEwiA283Xu8bVAhVnjFQKHRTGAMs4ZBAzCCUoIzAj..i&w=640&h=384&bih=703&biw=1276&q=darth%20maul&ved=0ahUKEwiA283Xu8bVAhVnjFQKHRTGAMs4ZBAzCCUoIzAj&iact=mrc&uact=8), and save it under `~/tensorflow/tf_files`, named it nondv1.jpg
+    * Let's use this [Dart Vader image](https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.buildabear.com%2FProductImages%2FBABW_US%2FXL%2F22048x.jpg&imgrefurl=http%3A%2F%2Fwww.buildabear.com%2Fshopping%2Fstore%2FDarth-Vader-Costume%2FproductId%3Dprod11330002&docid=hdbesD4NwWilAM&tbnid=ei5gfLdwvu4SzM%3A&vet=10ahUKEwiUx4Oku8bVAhWFsVQKHShUBcI4yAEQMwgSKBAwEA..i&w=600&h=600&bih=703&biw=1276&q=darth%20vader&ved=0ahUKEwiUx4Oku8bVAhWFsVQKHShUBcI4yAEQMwgSKBAwEA&iact=mrc&uact=8), and save it under `~/tensorflow/tf_files`, named it `dv1.jpeg`
+    * Let's use this [Dart Maul image](https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn.epicstream.com%2Fassets%2Fuploads%2Fvideoscover%2F760x400%2FScreen_Shot_2016-03-06_at_3.44_.02_PM_.png&imgrefurl=http%3A%2F%2Fepicstream.com%2Fvideos%2FDarth-Maul-Apprentice-is-One-of-The-Best-Star-Wars-Fan-Films-Ever-Made&docid=GYumqrXocKR7bM&tbnid=ug9_NysdvGNTRM%3A&vet=10ahUKEwiA283Xu8bVAhVnjFQKHRTGAMs4ZBAzCCUoIzAj..i&w=640&h=384&bih=703&biw=1276&q=darth%20maul&ved=0ahUKEwiA283Xu8bVAhVnjFQKHRTGAMs4ZBAzCCUoIzAj&iact=mrc&uact=8), and save it under `~/tensorflow/tf_files`, named it `nondv1.jpeg`
 10. Now, go back to the other terminal that `tensorflow` docker container session, and do the following:
-    * 
+    * `python /star_wars/tf_classify.py /star_wars/nondv1.jpeg`
+ The output will be similiar as follows:
+ ```
+ 2017-08-08 01:14:25.582835: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 01:14:25.583106: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 01:14:25.583156: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 01:14:26.187402: W tensorflow/core/framework/op_def_util.cc:332] Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization().
+darth maul (score = 0.78427)
+darth vader (score = 0.21573)
+ ```
+    * From the above our application detects nondv1.jpeg is actually Darth Maul image with score 0.78427)
+    * ```* `python /star_wars/tf_classify.py /star_wars/dv1.jpeg```
+The output will be similar as follows:
+```
+2017-08-08 01:14:39.293931: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 01:14:39.294094: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 01:14:39.294141: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 01:14:39.910169: W tensorflow/core/framework/op_def_util.cc:332] Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization().
+darth vader (score = 0.89057)
+darth maul (score = 0.10943)
+```
+    * From the above our application detects `dv1.jpeg` is actually Darth Vader image with score 0.89057)
