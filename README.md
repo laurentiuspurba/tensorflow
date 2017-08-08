@@ -41,5 +41,19 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
 6. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**. Type the following in your **'Docker Quickstart Terminal'**
     * `docker run -it -v ~/tensorflow/tf_files/:/star_wars/ gcr.io/tensorflow/tensorflow:latest-devel`
 What the above command does is:
-7. In **'Docker Quickstart Terminal'**, type the following:
-    * docker run -it -v /Users/lrpurba/latih/python/tensorflow/tf_files/:/star_wars/ gcr.io/tensorflow/tensorflow:latest-devel
+    * It maps your host `~/tensorflow/tf_files` directory to `/star_wars/` directory in tensorflow docker container
+    * You will be logged in to tensorflow docker container
+7. Now, you are in `tensorflow` docker container, do the following:
+    * `cd /tensorflow`
+    * `git pull`
+8. Now, it's time to train the model (darth_vader and darth_maul):
+Make sure you are in `tensorflow` docker container, and in `/tensorflow/` directory, and type the following:
+```
+python tensorflow/examples/image_retraining/retrain.py \
+--bottleneck_dir=/tf_files/bottlenecks \
+--how_many_training_steps 500 \
+--model_dir=/tf_files/inception \
+--output_graph=/tf_files/retrained_graph.pb \
+--output_labels=/tf_files/retrained_labels.txt \
+--image_dir /tf_files/star_wars
+```
