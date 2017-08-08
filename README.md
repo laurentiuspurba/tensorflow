@@ -10,8 +10,9 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
 3. Let's prepare some other things, before we install tensorflow image
     * Open a new terminal
     * Create a `tensorflow/tf_files` under your home directory; type the following
-    * mkdir `~/tensorflow/tf_files`
+        * mkdir `~/tensorflow/tf_files`
     * This directory will hold all directories of images that we will be used for training
+    * There should be at least 2 directories under `~/tensorflow/tf_files`
     * The structure of the directory should be as follows:
     <pre>
     ~/tensorflow/tf_files
