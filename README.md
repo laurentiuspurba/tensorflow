@@ -8,7 +8,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
     * Once you have the above installed, download and install the following, https://www.docker.com/products/docker-toolbox
 2. Once you have it installed, make sure to run **'Docker Quickstart Terminal'**
 3. Let's prepare some other things, before we install tensorflow image
-    * Create a 'tensorflow/tf_files' under your home directory; type the following
+    * Create a `tensorflow/tf_files` under your home directory; type the following
     * mkdir `~/tensorflow/tf_files`
     * This directory will hold all directories of images that we will be used for training
     * The structure of the directory should be as follows:
