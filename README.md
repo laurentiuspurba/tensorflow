@@ -40,7 +40,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
         * Once you have it downloaded, make sure to move these files to `~/tensorflow/tf_files`
     * [Darth Maul](https://www.google.com/search?biw=1276&bih=703&tbm=isch&sa=1&q=darth+maul&oq=darth+maul&gs_l=psy-ab.3..0l4.159357.159830.0.160359.4.4.0.0.0.0.166.351.2j1.3.0....0...1.1.64.psy-ab..1.3.351.816QVobFZ9w)
         * Do the same steps as the [Dart Vader] above
-6. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**. Type the following in your **'Docker Quickstart Terminal'**
+6. Now, let's install tensoflow image on the docker that you opened through **'Docker Quickstart Terminal'**. (See step #2). Type the following in your **'Docker Quickstart Terminal'**
     * `docker run -it -v ~/tensorflow/tf_files/:/star_wars/ gcr.io/tensorflow/tensorflow:latest-devel`
     * **Remember:** Do not close or exit this `tensorflow` docker container session<br/>
 What the above command does is:
