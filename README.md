@@ -85,6 +85,6 @@ Creating bottleneck at /tf_files/bottlenecks/darth_maul/pic_006.jpg.txt
 Final test accuracy = 100.0% (N=7)
 Converted 2 variables to const ops.
 ```
-9. Now, we want to write a script that uses trained classifier to detect if a given image contains Darth Vader. Open a new terminal windows, and type the following:
+9. Now, we want to write a script that uses trained classifier to detect if a given image contains Darth Vader. Open a new terminal windows, and do the following:
     * `cd ~/tensorflow/tf_files`
-    * 
+    * Create a new file. You can name it whatever you want. [Source code](./tf_classify.py)
