@@ -103,7 +103,8 @@ Converted 2 variables to const ops.
 darth maul (score = 0.78427)
 darth vader (score = 0.21573)
  ```
-    * From the above our application detects nondv1.jpeg is actually Darth Maul image with score 0.78427)
+From the above, our application detects `nondv1.jpeg` is actually **Darth Maul** image with score **0.78427** (78%)
+11. Still in the `tensorflow` docker container session, do the following:
     * `python /star_wars/tf_classify.py /star_wars/dv1.jpeg`
 The output will be similar as follows:
 ```
@@ -114,4 +115,4 @@ The output will be similar as follows:
 darth vader (score = 0.89057)
 darth maul (score = 0.10943)
 ```
-    * From the above our application detects `dv1.jpeg` is actually Darth Vader image with score 0.89057)
+From the above, our application detects `dv1.jpeg` is actually **Darth Vader** image with score **0.89057** (89%)
