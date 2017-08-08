@@ -40,10 +40,10 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
         * Do the same steps as the [Dart Vader] above
 6. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**. Type the following in your **'Docker Quickstart Terminal'**
     * `docker run -it -v ~/tensorflow/tf_files/:/star_wars/ gcr.io/tensorflow/tensorflow:latest-devel`
-    * **Remeber:** Do not close or exit this `tensorflow` docker container session
+    * **Remember:** Do not close or exit this `tensorflow` docker container session<br/>
 What the above command does is:
-    * It maps your host `~/tensorflow/tf_files` directory to `/star_wars/` directory in tensorflow docker container
-    * You will be logged in to tensorflow docker container
+        * It maps your host's `~/tensorflow/tf_files` directory to `/star_wars/` directory in `tensorflow` docker container
+        * You will be logged in to tensorflow docker container
 7. Now, you are in `tensorflow` docker container, do the following:
     * `cd /tensorflow`
     * `git pull`
