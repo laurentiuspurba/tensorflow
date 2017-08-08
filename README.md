@@ -32,7 +32,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
          +-- ...
      </pre>
 4. To make easier to download all required files, make sure to install this chrome extension, `Fatkun Batch Download Image`
-5. Now, let's download all required images to be saved in those directories above (darth_vader, darth_maul). You can use the following links to download darth vader and darth maul:
+5. Now, let's download all required images to be saved in those directories above (darth_vader, darth_maul). You can use the following links to download darth vader and darth maul images:
     * [Darth Vader](https://www.google.com/search?q=darth+vader&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi9g8GVqcbVAhUK8GMKHUc9DlwQ_AUICigB&biw=1276&bih=703)
         * Once you open the above link opened, click `Fatkun Batch Download Image` icon
         * A modal window will be opened, click on `This Tab`
