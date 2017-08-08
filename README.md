@@ -57,3 +57,31 @@ python tensorflow/examples/image_retraining/retrain.py \
 --output_labels=/tf_files/retrained_labels.txt \
 --image_dir /star_wars
 ```
+If everything is setup properly, you will see similar output as follows:
+```
+>> Downloading inception-2015-12-05.tgz 100.0%
+Successfully downloaded inception-2015-12-05.tgz 88931400 bytes.
+Looking for images in 'darth_maul'
+Looking for images in 'darth_vader'
+Looking for images in 'kitten'
+No files found
+2017-08-08 00:49:13.566091: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 00:49:13.566173: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-08 00:49:13.566235: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+Creating bottleneck at /tf_files/bottlenecks/darth_maul/pic_003.jpg.txt
+2017-08-08 00:49:14.095826: W tensorflow/core/framework/op_def_util.cc:332] Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization().
+Creating bottleneck at /tf_files/bottlenecks/darth_maul/pic_004.jpg.txt
+Creating bottleneck at /tf_files/bottlenecks/darth_maul/pic_006.jpg.txt
+...
+...
+...
+2017-08-08 00:51:07.991467: Step 480: Validation accuracy = 100.0% (N=100)
+2017-08-08 00:51:08.811397: Step 490: Train accuracy = 100.0%
+2017-08-08 00:51:08.811650: Step 490: Cross entropy = 0.020678
+2017-08-08 00:51:08.896350: Step 490: Validation accuracy = 100.0% (N=100)
+2017-08-08 00:51:09.644563: Step 499: Train accuracy = 100.0%
+2017-08-08 00:51:09.644881: Step 499: Cross entropy = 0.019680
+2017-08-08 00:51:09.738435: Step 499: Validation accuracy = 100.0% (N=100)
+Final test accuracy = 100.0% (N=7)
+Converted 2 variables to const ops.
+```
