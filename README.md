@@ -40,6 +40,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
         * Do the same steps as the [Dart Vader] above
 6. Now, let's install tensoflow image on the docker that you open through **'Docker Quickstart Terminal'**. Type the following in your **'Docker Quickstart Terminal'**
     * `docker run -it -v ~/tensorflow/tf_files/:/star_wars/ gcr.io/tensorflow/tensorflow:latest-devel`
+    * **Remeber: ** Do not close or exit this `tensorflow` docker container session
 What the above command does is:
     * It maps your host `~/tensorflow/tf_files` directory to `/star_wars/` directory in tensorflow docker container
     * You will be logged in to tensorflow docker container
@@ -85,6 +86,7 @@ Creating bottleneck at /tf_files/bottlenecks/darth_maul/pic_006.jpg.txt
 Final test accuracy = 100.0% (N=7)
 Converted 2 variables to const ops.
 ```
-9. Now, we want to write a script that uses trained classifier to detect if a given image contains Darth Vader. Open a new terminal windows, and do the following:
+9. Now, we want to write a script that uses trained classifier to detect if a given image contains Darth Vader. Open a new terminal windows, and do the following: *(Make sure you are not in tensorflow docker container)*
     * `cd ~/tensorflow/tf_files`
     * Create a new file. You can name it whatever you want. [Source code](./tf_classify.py)
+10. Now, go back to the other terminal that `tensorflow` docker container session.
