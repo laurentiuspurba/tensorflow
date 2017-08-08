@@ -13,7 +13,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
         * mkdir `~/tensorflow/tf_files`
     * This directory will hold all directories of images that we will be used for training
     * There should be at least 2 directories under `~/tensorflow/tf_files`
-    * The structure of the directory should be as follows:
+    * The directory structure should be as follows:
     <pre>
     ~/tensorflow/tf_files
       +-- darth_vader
