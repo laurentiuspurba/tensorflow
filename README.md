@@ -104,7 +104,7 @@ darth maul (score = 0.78427)
 darth vader (score = 0.21573)
  ```
     * From the above our application detects nondv1.jpeg is actually Darth Maul image with score 0.78427)
-    * ```* `python /star_wars/tf_classify.py /star_wars/dv1.jpeg```
+    * `python /star_wars/tf_classify.py /star_wars/dv1.jpeg`
 The output will be similar as follows:
 ```
 2017-08-08 01:14:39.293931: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
