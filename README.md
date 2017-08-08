@@ -5,7 +5,7 @@ A quick how-to on tensorflow based on **Siraj Raval** tutorial, **"Build a Tenso
 ## Install Docker
 1. For Mac user:
     * Download and install this, https://www.docker.com/docker-mac
-    * Once you have the above installed, download and instlal the following, https://www.docker.com/products/docker-toolbox
+    * Once you have the above installed, download and install the following, https://www.docker.com/products/docker-toolbox
 2. Once you have it installed, make sure to run **'Docker Quickstart Terminal'**
 3. Let's prepare some other things, before we install tensorflow image
     * Create a 'tensorflow/tf_files' under your home directory; type the following
@@ -89,4 +89,8 @@ Converted 2 variables to const ops.
 9. Now, we want to write a script that uses trained classifier to detect if a given image contains Darth Vader. Open a new terminal windows, and do the following: *(Make sure you are not in tensorflow docker container)*
     * `cd ~/tensorflow/tf_files`
     * Create a new file. You can name it whatever you want. [Source code](./tf_classify.py)
-10. Now, go back to the other terminal that `tensorflow` docker container session.
+11. Before we can test our sample data/images, let's download any Darth Vader and Darth Maul images:
+    * Let's use this [Dart Vader image](https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.buildabear.com%2FProductImages%2FBABW_US%2FXL%2F22048x.jpg&imgrefurl=http%3A%2F%2Fwww.buildabear.com%2Fshopping%2Fstore%2FDarth-Vader-Costume%2FproductId%3Dprod11330002&docid=hdbesD4NwWilAM&tbnid=ei5gfLdwvu4SzM%3A&vet=10ahUKEwiUx4Oku8bVAhWFsVQKHShUBcI4yAEQMwgSKBAwEA..i&w=600&h=600&bih=703&biw=1276&q=darth%20vader&ved=0ahUKEwiUx4Oku8bVAhWFsVQKHShUBcI4yAEQMwgSKBAwEA&iact=mrc&uact=8), and save it under `~/tensorflow/tf_files`, named it dv1.jpg
+    * Let's use this [Dart Maul image](https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn.epicstream.com%2Fassets%2Fuploads%2Fvideoscover%2F760x400%2FScreen_Shot_2016-03-06_at_3.44_.02_PM_.png&imgrefurl=http%3A%2F%2Fepicstream.com%2Fvideos%2FDarth-Maul-Apprentice-is-One-of-The-Best-Star-Wars-Fan-Films-Ever-Made&docid=GYumqrXocKR7bM&tbnid=ug9_NysdvGNTRM%3A&vet=10ahUKEwiA283Xu8bVAhVnjFQKHRTGAMs4ZBAzCCUoIzAj..i&w=640&h=384&bih=703&biw=1276&q=darth%20maul&ved=0ahUKEwiA283Xu8bVAhVnjFQKHRTGAMs4ZBAzCCUoIzAj&iact=mrc&uact=8), and save it under `~/tensorflow/tf_files`, named it nondv1.jpg
+10. Now, go back to the other terminal that `tensorflow` docker container session, and do the following:
+    * 
